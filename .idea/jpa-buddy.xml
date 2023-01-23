@@ -3,6 +3,8 @@
   <component name="JpaBuddyIdeaProjectConfig">
     <option name="defaultUnitInitialized" value="true" />
     <option name="renamerInitialized" value="true" />
-    <option name="newEntityIdStrategy" />
+    <option name="reverseEngineeringLastDbConnectionId" value="e6b21dda-d6fb-4e70-89a0-65e34473e3fe" />
+    <option name="reLastEntityCreationPackage" value="src/main/java/be/bstorm/akimts/entities" />
+    <option name="newEntityIdStrategy" value="Auto" />
   </component>
 </project>
