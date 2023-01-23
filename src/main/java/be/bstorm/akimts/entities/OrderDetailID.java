@@ -14,10 +14,7 @@ public class OrderDetailID implements Serializable {
 
     private static final long serialVersionID = 1L;
 
-    @Column(name = "order_id")
     private long orderId;
-
-    @Column(name = "product_id")
     private long productId;
 
 }
