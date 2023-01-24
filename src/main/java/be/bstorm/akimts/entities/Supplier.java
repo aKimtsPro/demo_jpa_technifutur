@@ -13,6 +13,11 @@ import java.util.List;
 @Getter @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@NamedQueries(
+        {
+                @NamedQuery(name = "GET_ALL_SUPPLIER", query = "SELECT s FROM Supplier s")
+        }
+)
 public class Supplier {
 
     @Id

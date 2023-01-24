@@ -13,6 +13,7 @@ import java.util.Set;
 @Getter @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@NamedQueries({@NamedQuery(name = "GET_ALL_PRODUCT", query = "SELECT p FROM Product p")})
 public class Product {
 
     @Id
@@ -22,19 +23,22 @@ public class Product {
     @Column(name = "product_name")
     private String name;
 
+    @Column(name = "unit_price")
+    private Double unitPrice;
+
     @Column(name = "quantity_per_unit")
     private String qttPerUnit;
 
     @Column(name = "units_in_stock")
-    private int stock;
+    private Integer stock;
 
     @Column(name = "units_on_order")
     private Integer onOrder;
 
     @Column(name = "reorder_level")
-    private int reorderLevel;
+    private Integer reorderLevel;
 
-    private int discontinued;
+    private Integer discontinued;
 
     @ManyToOne
     @JoinColumn(name = "supplier_id")
